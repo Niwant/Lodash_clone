@@ -1,23 +1,23 @@
 import { isval } from "./isval.js";
 import { chain } from "./chainnew.js";
 
-export function drop(arr)
-{
-if(Array.isArray(arr)) { 
-    let x=Object.create(arr)
-x.splice(0, arr.length);
-return x;
-}
-else{
-    console.log("Its not an Array");
-}
-}
-chain.prototype.drop = function(){
-    this.p=abc.drop(this.p)
-    return this
-}
+// export function drop(arr)
+// {
+// if(Array.isArray(arr)) { 
+//     let x=Object.create(arr)
+// x.splice(0, arr.length);
+// return x;
+// }
+// else{
+//     console.log("Its not an Array");
+// }
+// }
+// chain.prototype.drop = function(){
+//     this.p=abc.drop(this.p)
+//     return this
+// }
 
-export function dropupto(arr,val){
+export function drop(arr,val){
     let x=new Array
     
     
@@ -37,34 +37,31 @@ else{
 }
 return x;
 }
-chain.prototype.dropupto = function(val){
-    this.p=abc.dropupto(this.p,val)
+chain.prototype.drop = function(val){
+    this.target=_.drop(this.target,val)
     return this
 }
 
-export function dropparticular(arr,n)
-{
-    if(Array.isArray(arr)){
+// export function dropparticular(arr,n)
+// {
+//     if(Array.isArray(arr)){
        
-    for( var i = 0; i < arr.length; i++){ 
+//     for( var i = 0; i < arr.length; i++){ 
         
     
-        if ( arr[i] === n) { 
+//         if ( arr[i] === n) { 
     
-            arr.splice(i, 1); 
-        }
+//             arr.splice(i, 1); 
+//         }
     
-    }
-    return arr;
-}
-else{
-    console.log("Its not an array");
-}
-}
-chain.prototype.dropparticular = function(val){
-    this.p=abc.dropparticular(this.p,val)
-    return this
-}
-window.drop=drop;
-window.dropparticular=dropparticular;
-window.dropupto=dropupto;
+//     }
+//     return arr;
+// }
+// else{
+//     console.log("Its not an array");
+// }
+// }
+// chain.prototype.dropparticular = function(val){
+//     this.p=abc.dropparticular(this.p,val)
+//     return this
+// }

@@ -1,8 +1,8 @@
-import  "../main.js"
+import  "./lib.js"
 
 class chain {
     constructor(arr){
-        this.p = arr
+        this.target = arr
     }
 }
 
@@ -15,7 +15,7 @@ function chainnew(val){
 }
 
 chain.prototype.end = function(){
-    return this.p
+    return this.target
 }
 
 export {chain}

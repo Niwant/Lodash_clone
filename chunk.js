@@ -1,6 +1,6 @@
 import { chain } from "./chainnew.js";
 import { isval } from "./isval.js";
-export function sliceIntoChunks(arr, chunkSize) {
+export function chunk(arr, chunkSize) {
     const res = [];
     if(!Array.isArray(arr)){
         console.error("Its not array")
@@ -20,7 +20,6 @@ else{
     return res;
 }
 chain.prototype.chunk = function(val){
-    this.p=abc.sliceIntoChunks(this.p,val)
+    this.target=_.chunk(this.target,val)
     return this
 }
-window.sliceIntoChunks=sliceIntoChunks;

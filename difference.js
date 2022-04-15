@@ -1,6 +1,6 @@
 import {chain}from"./chainnew.js"
 
-export function getdifferenceleft(arr,values){
+export function difference(arr,values){
     let x= new Array
     if(arr instanceof Array && values instanceof Array){
         for(let i=0 ; i<arr.length; i++){
@@ -18,7 +18,7 @@ export function getdifferenceleft(arr,values){
 }
 
 chain.prototype.difference = function(values){
-    this.p = abc.getdifferenceleft(this.p,values)
+    this.target = _.difference(this.target,values)
     return this
 }
 

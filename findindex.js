@@ -1,5 +1,5 @@
 import { chain } from "./chainnew.js";
-export function findindex(arraytosearch, valuetosearch) {
+export function findIndex(arraytosearch, valuetosearch) {
     if(Array.isArray(arraytosearch)){
     for (var i = 0; i < arraytosearch.length; i++) {
 
@@ -16,8 +16,8 @@ export function findindex(arraytosearch, valuetosearch) {
         console.error("Its not an array");
     }
     }
-    chain.prototype.findindex = function(val){
-        this.p=abc.findindex(this.p,val)
+    chain.prototype.findIndex = function(val){
+        this.target=_.findIndex(this.target,val)
         return this
     }
-    window.findindex=findindex;
+    

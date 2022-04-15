@@ -19,8 +19,7 @@ export function compact(arr){
     return x
 }
 chain.prototype.compact = function(){
-    this.p=abc.compact(this.p)
+    this.target=_.compact(this.target)
     return this
 }
 
-window.compact=compact;
