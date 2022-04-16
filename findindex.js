@@ -1,4 +1,5 @@
 import { chain } from "./chainnew.js"
+
 function findIndex(arraytosearch, valuetosearch) {
     if(Array.isArray(arraytosearch)){
     for (var i = 0; i < arraytosearch.length; i++) {
