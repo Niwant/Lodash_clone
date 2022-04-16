@@ -1,5 +1,5 @@
 import { chain } from "./chainnew.js";
-export function flattenDeep(ary) {
+function flattenDeep(ary) {
     if(Array.isArray(ary)){
     var ret = [];
     for(var i = 0; i < ary.length; i++) {
@@ -19,3 +19,5 @@ chain.prototype.flattenDeep = function(){
     this.target=_.flattenDeep(this.target)
     return this
 }
+
+export default flattenDeep

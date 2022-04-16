@@ -1,7 +1,7 @@
 import { isfalsy } from "./isfalsy.js"
 import { chain } from "./chainnew.js"
 
-export function compact(arr){
+function compact(arr){
     let x = new Array
     if(arr instanceof Array){
         
@@ -23,3 +23,4 @@ chain.prototype.compact = function(){
     return this
 }
 
+export default compact

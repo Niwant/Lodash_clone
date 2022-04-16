@@ -1,6 +1,6 @@
 import {chain}from"./chainnew.js"
 
-export function difference(arr,values){
+function difference(arr,values){
     let x= new Array
     if(arr instanceof Array && values instanceof Array){
         for(let i=0 ; i<arr.length; i++){
@@ -22,4 +22,4 @@ chain.prototype.difference = function(values){
     return this
 }
 
-
+export default difference

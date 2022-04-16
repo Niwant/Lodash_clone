@@ -17,7 +17,7 @@ import { chain } from "./chainnew.js";
 //     return this
 // }
 
-export function drop(arr,val){
+function drop(arr,val){
     let x=new Array
     
     
@@ -42,6 +42,7 @@ chain.prototype.drop = function(val){
     return this
 }
 
+export default drop
 // export function dropparticular(arr,n)
 // {
 //     if(Array.isArray(arr)){
