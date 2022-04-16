@@ -17,6 +17,8 @@ function findIndex(arraytosearch, valuetosearch) {
         console.error("Its not an array");
     }
     }
+
+
     chain.prototype.findIndex = function(val){
         this.target=_.findIndex(this.target,val)
         return this

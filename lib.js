@@ -2,7 +2,7 @@ import chunk from "./chunk.js"
 import filter from "./filter.js"
 import find from "./find.js"
 import drop from "./drop.js"
-import findIndex from './findIndex.js'
+import findIndex from './findindex.js'
 import flattenDeep from "./flattenDeep.js"
 import merge from "./merge.js"
 import omit from "./omit.js"
